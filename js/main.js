@@ -8,27 +8,44 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ---------- Sidebar en móvil ---------- */
-  var toggle   = document.querySelector('.topbar__toggle');
-  var sidebar  = document.querySelector('.sidebar');
-  var overlay  = document.querySelector('.fondo-oscurecido');
+/* ---------- Sidebar en móvil ---------- */
+var toggle   = document.querySelector('.topbar__toggle');
+var sidebar  = document.querySelector('.sidebar');
+var overlay  = document.querySelector('.fondo-oscurecido');
 
-  function abrirSidebar() {
-    sidebar.classList.add('abierta');
-    overlay.classList.add('visible');
-  }
-  function cerrarSidebar() {
-    sidebar.classList.remove('abierta');
-    overlay.classList.remove('visible');
-  }
+function abrirSidebar() {
+  sidebar.classList.add('abierta');
+  overlay.classList.add('visible');
+}
 
-  if (toggle && sidebar && overlay) {
-    toggle.addEventListener('click', abrirSidebar);
-    overlay.addEventListener('click', cerrarSidebar);
-    sidebar.querySelectorAll('a').forEach(function (enlace) {
-      enlace.addEventListener('click', cerrarSidebar);
-    });
-  }
+function cerrarSidebar() {
+  sidebar.classList.remove('abierta');
+  overlay.classList.remove('visible');
+}
+
+if (toggle && sidebar && overlay) {
+
+  toggle.addEventListener('click', function () {
+
+    // Si el menú está abierto, lo cierra
+    if (sidebar.classList.contains('abierta')) {
+      cerrarSidebar();
+
+    // Si está cerrado, lo abre
+    } else {
+      abrirSidebar();
+    }
+
+  });
+
+  // Cerrar al pulsar el fondo oscuro
+  overlay.addEventListener('click', cerrarSidebar);
+
+  // Cerrar al seleccionar una opción del menú
+  sidebar.querySelectorAll('a').forEach(function (enlace) {
+    enlace.addEventListener('click', cerrarSidebar);
+  });
+}
 
   /* ---------- Marcar enlace activo ---------- */
   var paginaActual = window.location.pathname.split('/').pop() || 'index.html';
