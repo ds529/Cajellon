@@ -24,7 +24,7 @@
 <!-- ===================== SIDEBAR ===================== -->
 <aside class="sidebar">
   <div>
-    <img class="sidebar__foto" src="https://espanol.hartfordhealthcare.org/image%20library/05e432b1-643f-4c2e-88e9-33ad09b8bb7d/unassigned/fast-food-restaurants.jpeg" alt="Hamburguesa con papas y malteada">
+    <img class="sidebar__foto" src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80" alt="Hamburguesa con papas fritas">
     <div class="sidebar__logo">
       <i class="fa-solid fa-burger"></i>
       <h1><a href="index.html">Food Local</a><small>Fast Food</small></h1>
@@ -54,8 +54,10 @@
 <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
 <main class="principal">
 
+  <!-- HERO -->
   <section class="hero">
     <div class="hero__contenido">
+      <p class="hero__badge"><span class="punto"></span>Cocina abierta · tu pedido listo en minutos</p>
       <p class="eyebrow">Comida rápida, sabor real</p>
       <h2>FOOD <span>LOCAL</span></h2>
       <p class="desc">Hamburguesas jugosas, papas crocantes y combos que sí llenan. Pide en línea y recógelo caliente, como debe ser.</p>
@@ -63,13 +65,26 @@
         <a href="menu.html" class="btn"><i class="fa-solid fa-utensils"></i>Ver menú</a>
         <a href="contacto.html" class="btn btn--fantasma"><i class="fa-solid fa-location-dot"></i>Cómo llegar</a>
       </div>
+      <div class="hero__datos">
+        <div><strong>9</strong><span>platos en el menú</span></div>
+        <div><strong>$2.20</strong><span>precios desde</span></div>
+        <div><strong>7 días</strong><span>abierto toda la semana</span></div>
+      </div>
     </div>
   </section>
+
+  <!-- CINTA EN MOVIMIENTO -->
+  <div class="cinta" aria-hidden="true">
+    <div class="cinta__pista">
+      <span>HAMBURGUESAS</span><i class="fa-solid fa-star"></i><span>PAPAS CARGADAS</span><i class="fa-solid fa-star"></i><span>PERROS CALIENTES</span><i class="fa-solid fa-star"></i><span>MALTEADAS</span><i class="fa-solid fa-star"></i><span>AROS DE CEBOLLA</span><i class="fa-solid fa-star"></i><span>BROWNIE CON HELADO</span><i class="fa-solid fa-star"></i>
+      <span>HAMBURGUESAS</span><i class="fa-solid fa-star"></i><span>PAPAS CARGADAS</span><i class="fa-solid fa-star"></i><span>PERROS CALIENTES</span><i class="fa-solid fa-star"></i><span>MALTEADAS</span><i class="fa-solid fa-star"></i><span>AROS DE CEBOLLA</span><i class="fa-solid fa-star"></i><span>BROWNIE CON HELADO</span><i class="fa-solid fa-star"></i>
+    </div>
+  </div>
 
   <!-- GALERÍA DE PLATOS -->
   <section class="seccion" style="padding-bottom:0;">
     <div class="contenedor">
-      <div class="seccion__titulo">
+      <div class="seccion__titulo revelar">
         <p class="eyebrow">Nuestra selección</p>
         <h3>Lo más pedido</h3>
       </div>
@@ -77,40 +92,40 @@
   </section>
 
   <section class="galeria">
-    <div class="plato plato--1">
+    <div class="plato plato--1 revelar">
       <i class="fa-solid fa-burger icono-plato"></i>
       <div class="plato__info">
-        <a href="menu.html"><img src="https://espanol.hartfordhealthcare.org/image%20library/05e432b1-643f-4c2e-88e9-33ad09b8bb7d/unassigned/fast-food-restaurants.jpeg" alt="Hamburguesa Doble"></a>
+        <a href="menu.html"><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=900&q=80" alt="Hamburguesa Doble" loading="lazy"></a>
         <h4>Hamburguesa Doble</h4>
         <span>$8.90</span>
         <p>Doble carne, queso cheddar y salsa especial</p>
         <a class="plato__pedir" href="menu.html">Pedir ahora <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
-    <div class="plato plato--2">
+    <div class="plato plato--2 revelar revelar--1">
       <i class="fa-solid fa-french-fries icono-plato"></i>
       <div class="plato__info">
-        <a href="menu.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3cqXTqRUMLAk2giXfGN7EXpndIeaY9xsa-VoioXNMzlYzjQ6WgIEt0pzm&s=10" alt="Papas cargadas"></a>
+        <a href="menu.html"><img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=900&q=80" alt="Papas cargadas" loading="lazy"></a>
         <h4>Papas cargadas</h4>
         <span>$6.50</span>
         <p>Con tocineta, queso fundido y cebollín</p>
         <a class="plato__pedir" href="menu.html">Pedir ahora <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
-    <div class="plato plato--3">
+    <div class="plato plato--3 revelar revelar--2">
       <i class="fa-solid fa-hotdog icono-plato"></i>
       <div class="plato__info">
-        <a href="menu.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVmT1IvXoxsMyOHqMV9Sb8t4myD34VxSUqww2esH6hLbySJdeYUXW0nZE&s=10" alt="Perro Caliente"></a>
+        <a href="menu.html"><img src="https://images.unsplash.com/photo-1612392062631-94dd858cba88?auto=format&fit=crop&w=900&q=80" alt="Perro Caliente" loading="lazy"></a>
         <h4>Perro Caliente</h4>
         <span>$5.90</span>
         <p>Salchicha ahumada con papas hilo</p>
         <a class="plato__pedir" href="menu.html">Pedir ahora <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
-    <div class="plato plato--4">
+    <div class="plato plato--4 revelar revelar--3">
       <i class="fa-solid fa-cup-straw icono-plato"></i>
       <div class="plato__info">
-        <a href="menu.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugWHSREF78fNsF4wAgELk_NDmMWH49yZ2ucUI-K9c3xqewybtHkeAC8I&s=10" alt="Malteada de oreo"></a>
+        <a href="menu.html"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=900&q=80" alt="Malteada de oreo" loading="lazy"></a>
         <h4>Malteada de oreo</h4>
         <span>$4.50</span>
         <p>Cremosa y bien helada</p>
@@ -119,21 +134,69 @@
     </div>
   </section>
 
-  <!-- DESTACADOS -->
+  <!-- CÓMO PEDIR -->
   <section class="seccion">
     <div class="contenedor">
+      <div class="seccion__titulo revelar">
+        <p class="eyebrow">Así de fácil</p>
+        <h3>Cómo pedir</h3>
+      </div>
+      <div class="pasos">
+        <div class="paso revelar">
+          <span class="paso__num">1</span>
+          <i class="fa-solid fa-utensils"></i>
+          <h4>Elige tus platos</h4>
+          <p>Entra al menú y añade con el botón «+» todo lo que quieras. Puedes ajustar las cantidades en tu pedido.</p>
+        </div>
+        <div class="paso revelar revelar--1">
+          <span class="paso__num">2</span>
+          <i class="fa-solid fa-paper-plane"></i>
+          <h4>Envía tu pedido</h4>
+          <p>Déjanos tu nombre, cómo lo quieres recibir y cualquier especificación: sin cebolla, extra queso, lo que sea.</p>
+        </div>
+        <div class="paso revelar revelar--2">
+          <span class="paso__num">3</span>
+          <i class="fa-solid fa-fire"></i>
+          <h4>Recógelo caliente</h4>
+          <p>Lo preparamos al momento para que lo recojas recién hecho, o te lo llevamos a domicilio por WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMBO DE LA CASA -->
+  <section class="seccion" style="padding-top:0;">
+    <div class="contenedor">
+      <div class="combo revelar">
+        <div class="combo__img">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=1100&q=80" alt="Hamburguesa clásica de la casa" loading="lazy">
+        </div>
+        <div class="combo__contenido">
+          <p class="eyebrow">Combo sugerido</p>
+          <h3>El combo de la casa</h3>
+          <p>Hamburguesa Doble + Papas cargadas + Gaseosa de 400ml. La combinación que más se repite en nuestros pedidos, lista para armar en el menú.</p>
+          <p class="combo__precio">Los tres platos por<strong>$17.60</strong></p>
+          <a href="menu.html" class="btn"><i class="fa-solid fa-bag-shopping"></i>Armar mi combo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTACADOS -->
+  <section class="seccion" style="padding-top:0;">
+    <div class="contenedor">
       <div class="destacados">
-        <div class="destacado">
+        <div class="destacado revelar">
           <i class="fa-solid fa-bolt"></i>
           <h4>Entrega rápida</h4>
           <p>Tu pedido listo en minutos, caliente y fresco.</p>
         </div>
-        <div class="destacado">
+        <div class="destacado revelar revelar--1">
           <i class="fa-solid fa-drumstick-bite"></i>
           <h4>Ingredientes de calidad</h4>
           <p>Carne 100% de res y pan horneado a diario.</p>
         </div>
-        <div class="destacado">
+        <div class="destacado revelar revelar--2">
           <i class="fa-solid fa-mobile-screen-button"></i>
           <h4>Pide fácil</h4>
           <p>Ordena desde nuestra página en segundos.</p>
@@ -142,7 +205,7 @@
     </div>
   </section>
 
-  <!-- PIE / BOTÓN FINAL -->
+  <!-- PIE -->
   <footer class="pie-final">
     <p>&copy; 2026 Food Local — Todos los derechos reservados</p>
     <p>¿Listo para ordenar? Visita nuestro <a href="menu.html">menú</a></p>

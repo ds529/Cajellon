@@ -9,6 +9,26 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  /* Marca que hay JS: solo entonces los elementos .revelar
+     parten ocultos para aparecer al hacer scroll */
+  document.documentElement.classList.add('js');
+
+  /* ---------- Aparición al hacer scroll ---------- */
+  var revelar = document.querySelectorAll('.revelar');
+  if ('IntersectionObserver' in window) {
+    var observador = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (entrada) {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('visible');
+          observador.unobserve(entrada.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revelar.forEach(function (el) { observador.observe(el); });
+  } else {
+    revelar.forEach(function (el) { el.classList.add('visible'); });
+  }
+
   /* ---------- Sidebar en móvil ---------- */
   var toggle  = document.querySelector('.topbar__toggle');
   var sidebar = document.querySelector('.sidebar');
